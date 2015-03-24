@@ -18,6 +18,9 @@ class Filter
 {
     public static function ipJavaScript($javascript)
     {
+        if (ipIsManagementState()) {
+            return $javascript;
+        }
         $code = ipGetOptionLang('TawkTo.widgetCode');
         if ($code) {
             $javascript .= "\n" . $code . "\n";
