@@ -18,7 +18,7 @@ class Filter
 {
     public static function ipJavaScript($javascript)
     {
-        if (ipIsManagementState()) {
+        if (ipIsManagementState() || ipRoute()->isAdmin()) {
             return $javascript;
         }
         $code = ipGetOptionLang('TawkTo.widgetCode');
