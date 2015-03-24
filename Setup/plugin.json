@@ -1,0 +1,16 @@
+{
+  "title": "Tawk.to free chat",
+  "version": "1.00",
+  "name": "TawkTo",
+  "description": "Integration of Free Tawk.to chat.",
+  "author": "ImpressPages",
+  "options": [
+    {
+      "label": "Widget code",
+      "name": "widgetCode",
+      "type": "TextareaLang",
+      "note": "Please create Tawk.to account and paste the generated widget code here.",
+      "default": ""
+    }
+  ]
+}
